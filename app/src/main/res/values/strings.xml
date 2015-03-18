@@ -11,4 +11,15 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/inicio</item>
+        <item>@drawable/audio_visuales</item>
+        <item>@drawable/medios_digitales</item>
+        <item>@drawable/tecnologias_de_informacion</item>
+        <item>@drawable/web_multimedia</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
 </resources>

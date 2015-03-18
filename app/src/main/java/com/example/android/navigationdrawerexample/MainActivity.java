@@ -1,6 +1,15 @@
 package com.example.android.navigationdrawerexample;
 
+import rpcdigital.slidingmenu.model.AudioVisualesFragment;
+import rpcdigital.slidingmenu.model.InicioFragment;
+import rpcdigital.slidingmenu.model.MediosDigitalesFragment;
+import rpcdigital.slidingmenu.model.NavDrawerItem;
+import rpcdigital.slidingmenu.model.NavDrawerListAdapter;
+import rpcdigital.slidingmenu.model.TecnologiasdeInformacionFragment;
+import rpcdigital.slidingmenu.model.WebMultimediaFragment;
+
 import java.util.Locale;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -23,6 +32,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.content.res.TypedArray;
 
 
 public class MainActivity extends Activity {
@@ -33,6 +43,9 @@ public class MainActivity extends Activity {
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     private String[] mPlanetTitles;
+    private TypedArray navMenuIcons;
+    private ArrayList<NavDrawerItem> navDrawerItems;
+    private NavDrawerListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +54,36 @@ public class MainActivity extends Activity {
 
         mTitle = mDrawerTitle = getTitle();
         mPlanetTitles = getResources().getStringArray(R.array.planets_array);
+        navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
+        navDrawerItems = new ArrayList<NavDrawerItem>();
+
         // set a custom shadow that overlays the main content when the drawer opens
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        // set up the drawer's list view with items and click listener
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.drawer_list_item, mPlanetTitles));
+
+        // adding nav drawer items to array
+        // Inicio
+        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[0], navMenuIcons.getResourceId(0, -1)));
+        // Find People
+        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[1], navMenuIcons.getResourceId(1, -1)));
+        // Photos
+        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[2], navMenuIcons.getResourceId(2, -1)));
+        // Communities, Will add a counter here
+        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
+        // Pages
+        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[4], navMenuIcons.getResourceId(4, -1)));
+
+        // Recycle the typed array
+        navMenuIcons.recycle();
+
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
+        // setting the nav drawer list adapter
+        adapter = new NavDrawerListAdapter(getApplicationContext(),
+                navDrawerItems);
+        mDrawerList.setAdapter(adapter);
 
         // enable ActionBar app icon to behave as action to toggle nav drawer
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -132,7 +166,26 @@ public class MainActivity extends Activity {
 
     private void selectItem(int position) {
         // update the main content by replacing fragments
-        Fragment fragment = new PlanetFragment();
+        Fragment fragment = null;
+        switch (position) {
+            case 0:
+                fragment = new InicioFragment();
+                break;
+            case 1:
+                fragment = new AudioVisualesFragment();
+                break;
+            case 2:
+                fragment = new MediosDigitalesFragment();
+                break;
+            case 3:
+                fragment = new TecnologiasdeInformacionFragment();
+                break;
+            case 4:
+                fragment = new WebMultimediaFragment();
+                break;
+            default:
+                break;
+        }
         Bundle args = new Bundle();
         args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
         fragment.setArguments(args);
