@@ -39,12 +39,11 @@ public final class R {
         public static final int web_multimedia=0x7f02000d;
     }
     public static final class id {
-        public static final int action_websearch=0x7f080008;
+        public static final int action_websearch=0x7f080007;
         public static final int content_frame=0x7f080001;
         public static final int counter=0x7f080005;
         public static final int drawer_layout=0x7f080000;
         public static final int icon=0x7f080003;
-        public static final int image=0x7f080007;
         public static final int left_drawer=0x7f080002;
         public static final int title=0x7f080004;
         public static final int txtLabel=0x7f080006;
@@ -55,9 +54,8 @@ public final class R {
         public static final int fragment_audio_visuales=0x7f030002;
         public static final int fragment_inicio=0x7f030003;
         public static final int fragment_medios_digitales=0x7f030004;
-        public static final int fragment_planet=0x7f030005;
-        public static final int fragment_tecnologias_de_informacion=0x7f030006;
-        public static final int fragment_web_multimedia=0x7f030007;
+        public static final int fragment_tecnologias_de_informacion=0x7f030005;
+        public static final int fragment_web_multimedia=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f070000;

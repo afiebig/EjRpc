@@ -64,6 +64,10 @@ public class MainActivity extends Activity {
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
         // adding nav drawer items to array
+        for (int i=0; i< mPlanetTitles.length;i++){
+            navDrawerItems.add(new NavDrawerItem(mPlanetTitles[i], navMenuIcons.getResourceId(i, -1)));
+        }
+/*
         // Inicio
         navDrawerItems.add(new NavDrawerItem(mPlanetTitles[0], navMenuIcons.getResourceId(0, -1)));
         // Find People
@@ -74,7 +78,7 @@ public class MainActivity extends Activity {
         navDrawerItems.add(new NavDrawerItem(mPlanetTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
         // Pages
         navDrawerItems.add(new NavDrawerItem(mPlanetTitles[4], navMenuIcons.getResourceId(4, -1)));
-
+*/
         // Recycle the typed array
         navMenuIcons.recycle();
 
@@ -234,7 +238,7 @@ public class MainActivity extends Activity {
             // Empty constructor required for fragment subclasses
         }
 
-        @Override
+      /*  @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
@@ -246,6 +250,6 @@ public class MainActivity extends Activity {
             ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
             getActivity().setTitle(getResources().getStringArray(R.array.planets_array)[i]);
             return rootView;
-        }
+        }*/
     }
 }

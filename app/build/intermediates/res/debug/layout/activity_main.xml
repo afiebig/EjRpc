@@ -27,4 +27,4 @@
         android:listSelector="@drawable/list_selector"
         android:background="#111"/>
 </android.support.v4.widget.DrawerLayout>
-<!-- From: file:/C:/Users/PipeIWeas/AndroidstudioProjects/EjELearning/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/rcpDicital/app/src/main/res/layout/activity_main.xml -->
