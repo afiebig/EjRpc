@@ -17,10 +17,13 @@ int drawable list_item_bg_normal 0x7f020007
 int drawable list_item_bg_pressed 0x7f020008
 int drawable list_selector 0x7f020009
 int drawable medios_digitales 0x7f02000a
-int drawable splash 0x7f02000b
-int drawable tecnologias_de_informacion 0x7f02000c
-int drawable web_multimedia 0x7f02000d
-int id action_websearch 0x7f080007
+int drawable serv_medios 0x7f02000b
+int drawable serv_multimedia 0x7f02000c
+int drawable serv_ti 0x7f02000d
+int drawable splash 0x7f02000e
+int drawable tecnologias_de_informacion 0x7f02000f
+int drawable web_multimedia 0x7f020010
+int id action_websearch 0x7f080009
 int id content_frame 0x7f080001
 int id counter 0x7f080005
 int id drawer_layout 0x7f080000
@@ -28,6 +31,8 @@ int id icon 0x7f080003
 int id left_drawer 0x7f080002
 int id title 0x7f080004
 int id txtLabel 0x7f080006
+int id txtLabel2 0x7f080007
+int id txtLabel3 0x7f080008
 int layout activity_main 0x7f030000
 int layout drawer_list_item 0x7f030001
 int layout fragment_audio_visuales 0x7f030002

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/rcpDicital/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/PipeIWeas/AndroidstudioProjects/EjELearning/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <array name="nav_drawer_icons">
         <item>@drawable/inicio</item>
@@ -16,7 +16,7 @@
         <item>Tecnologias de Informacion</item>
         <item>Web Multimedia</item>
     </string-array>
-    <!-- From: file:/C:/rcpDicital/app/src/main/res/values/color.xml -->
+    <!-- From: file:/C:/Users/PipeIWeas/AndroidstudioProjects/EjELearning/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
@@ -24,7 +24,7 @@
     <color name="list_background_pressed">#992416</color>
     <color name="list_divider">#272727</color>
     <color name="list_item_title">#fff</color>
-    <!-- From: file:/C:/rcpDicital/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/PipeIWeas/AndroidstudioProjects/EjELearning/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_websearch">Web search</string>
     <string name="app_name">rcp Digital</string>

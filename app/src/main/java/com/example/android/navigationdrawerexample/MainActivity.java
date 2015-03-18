@@ -67,18 +67,6 @@ public class MainActivity extends Activity {
         for (int i=0; i< mPlanetTitles.length;i++){
             navDrawerItems.add(new NavDrawerItem(mPlanetTitles[i], navMenuIcons.getResourceId(i, -1)));
         }
-/*
-        // Inicio
-        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[0], navMenuIcons.getResourceId(0, -1)));
-        // Find People
-        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[1], navMenuIcons.getResourceId(1, -1)));
-        // Photos
-        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[2], navMenuIcons.getResourceId(2, -1)));
-        // Communities, Will add a counter here
-        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
-        // Pages
-        navDrawerItems.add(new NavDrawerItem(mPlanetTitles[4], navMenuIcons.getResourceId(4, -1)));
-*/
         // Recycle the typed array
         navMenuIcons.recycle();
 
@@ -231,14 +219,15 @@ public class MainActivity extends Activity {
     /**
      * Fragment that appears in the "content_frame", shows a planet
      */
+
     public static class PlanetFragment extends Fragment {
         public static final String ARG_PLANET_NUMBER = "planet_number";
 
         public PlanetFragment() {
             // Empty constructor required for fragment subclasses
         }
-
-      /*  @Override
+/*
+        @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
