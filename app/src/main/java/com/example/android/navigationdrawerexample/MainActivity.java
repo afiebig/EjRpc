@@ -17,6 +17,7 @@ import android.app.FragmentManager;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.media.session.MediaController;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
@@ -33,7 +34,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.content.res.TypedArray;
-
+import android.widget.VideoView;
 
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;

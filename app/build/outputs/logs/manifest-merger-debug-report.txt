@@ -33,7 +33,7 @@ MERGED from com.android.support:support-v4:21.0.3:16:5
 		ADDED from AndroidManifest.xml:10:9
 	android:theme
 		ADDED from AndroidManifest.xml:11:9
-activity#com.example.android.navigationdrawerexample.MainActivity
+activity#com.example.android.navigationdrawerexample.Splash
 ADDED from AndroidManifest.xml:13:9
 	android:label
 		ADDED from AndroidManifest.xml:15:13
@@ -49,3 +49,19 @@ category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:18:17
 	android:name
 		ADDED from AndroidManifest.xml:18:27
+activity#com.example.android.navigationdrawerexample.MainActivity
+ADDED from AndroidManifest.xml:22:9
+	android:label
+		ADDED from AndroidManifest.xml:24:13
+	android:name
+		ADDED from AndroidManifest.xml:23:13
+intent-filter#android.intent.category.DEFAULT+com.example.android.navigationdrawerexample.MainActivity
+ADDED from AndroidManifest.xml:25:13
+action#com.example.android.navigationdrawerexample.MainActivity
+ADDED from AndroidManifest.xml:26:17
+	android:name
+		ADDED from AndroidManifest.xml:26:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:27:17
+	android:name
+		ADDED from AndroidManifest.xml:27:27

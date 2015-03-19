@@ -35,13 +35,19 @@ Todo proyecto está dispuesto en el formato adecuado a su necesidad. Realizamos 
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"/>
 
-    <ImageView android:layout_width="wrap_content"
+    <VideoView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/serv_multimedia"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/videoViewav"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"/>
-    
+
+    <MediaController
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaController"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"/>
 
 </LinearLayout>

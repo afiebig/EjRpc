@@ -39,19 +39,23 @@ public final class R {
         public static final int serv_ti=0x7f02000d;
         public static final int splash=0x7f02000e;
         public static final int tecnologias_de_informacion=0x7f02000f;
-        public static final int web_multimedia=0x7f020010;
+        public static final int video1=0x7f020010;
+        public static final int web_multimedia=0x7f020011;
     }
     public static final class id {
-        public static final int action_websearch=0x7f080009;
+        public static final int action_websearch=0x7f08000c;
         public static final int content_frame=0x7f080001;
         public static final int counter=0x7f080005;
         public static final int drawer_layout=0x7f080000;
         public static final int icon=0x7f080003;
+        public static final int imageView=0x7f08000b;
         public static final int left_drawer=0x7f080002;
+        public static final int mediaController=0x7f08000a;
         public static final int title=0x7f080004;
         public static final int txtLabel=0x7f080006;
         public static final int txtLabel2=0x7f080007;
         public static final int txtLabel3=0x7f080008;
+        public static final int videoViewav=0x7f080009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -61,6 +65,7 @@ public final class R {
         public static final int fragment_medios_digitales=0x7f030004;
         public static final int fragment_tecnologias_de_informacion=0x7f030005;
         public static final int fragment_web_multimedia=0x7f030006;
+        public static final int splash=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f070000;
