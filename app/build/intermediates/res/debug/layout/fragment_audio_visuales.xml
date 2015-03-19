@@ -41,7 +41,8 @@ Todo proyecto está dispuesto en el formato adecuado a su necesidad. Realizamos 
         android:id="@+id/videoViewav"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginLeft="5dp"
+        android:layout_margin="5dp"/>
 
     <MediaController
         android:layout_width="wrap_content"

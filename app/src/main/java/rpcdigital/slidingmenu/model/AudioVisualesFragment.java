@@ -7,13 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.VideoView;
+import android.net.Uri;
 
 import com.example.android.navigationdrawerexample.R;
 
 public class AudioVisualesFragment extends Fragment{
 
     public AudioVisualesFragment(){}
-
 
     private VideoView mVideoView;
     private MediaController mController;
@@ -22,11 +22,11 @@ public class AudioVisualesFragment extends Fragment{
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_audio_visuales, container, false);
-        mVideoView = (VideoView) mVideoView.findViewById(R.id.videoViewav);
-        mVideoView.setVideoPath("android.resource://res/drawable/"+R.drawable.video1);
+        mVideoView = (VideoView) rootView.findViewById(R.id.videoViewav);
+        Uri path = Uri.parse("android.resource://com.example.android.navigationdrawerexample/"+R.raw.video1);
+        mVideoView.setVideoURI(path);
         mVideoView.start();
+
         return rootView;
     }
-
-
 }
